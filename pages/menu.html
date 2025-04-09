@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Resto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Resto</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Our Menu</h1>
+            <p class="animate__animated animate__fadeInUp">Discover our culinary masterpieces crafted with passion</p>
+        </div>
+    </section>
+
+    <section class="menu-section full-menu">
+        <div class="container">
+            <div class="menu-filters animate-on-scroll">
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="starters">Starters</button>
+                    <button class="category-btn" data-category="mains">Main Courses</button>
+                    <button class="category-btn" data-category="seafood">Seafood</button>
+                    <button class="category-btn" data-category="pasta">Pasta</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="drinks">Drinks</button>
+                </div>
+                <div class="menu-search">
+                    <input type="text" placeholder="Search menu items..." class="menu-search-input">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="menu-grid animate-on-scroll">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Bruschetta">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bruschetta</h3>
+                        <p>Fresh tomatoes, basil, and garlic on toasted bread</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$8.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Calamari">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fried Calamari</h3>
+                        <p>Lightly battered squid served with lemon aioli</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Grilled Salmon">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with herbs and lemon</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef" alt="Filet Mignon">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Filet Mignon</h3>
+                        <p>Premium beef tenderloin with red wine reduction</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$32.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more menu items -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Resto</h3>
+                <p>Experience the finest culinary delights in an elegant atmosphere.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 11am - 10pm</p>
+                <p>Saturday - Sunday: 10am - 11pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Culinary City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@resto.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Resto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="notification"></div>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</body>
+</html>

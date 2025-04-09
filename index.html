@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto - Fine Dining Experience</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Resto</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Welcome to Resto</h1>
+            <p class="animate__animated animate__fadeInUp">Experience the finest culinary delights</p>
+            <div class="hero-buttons animate__animated animate__fadeIn">
+                <a href="pages/menu.html" class="cta-button">View Menu</a>
+                <a href="pages/reservation.html" class="cta-button secondary">Make Reservation</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="mains">Main Courses</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+        </div>
+        <div class="menu-search">
+            <input type="text" placeholder="Search menu items..." class="menu-search-input">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Bruschetta">
+                    <div class="menu-item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Bruschetta</h3>
+                    <p>Fresh tomatoes, basil, and garlic on toasted bread</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Fried Calamari">
+                    <div class="menu-item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Fried Calamari</h3>
+                    <p>Lightly battered squid served with lemon aioli</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Grilled Salmon">
+                    <div class="menu-item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon with herbs and lemon</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$24.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9" alt="Tiramisu">
+                    <div class="menu-item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with coffee and mascarpone</p>
+                    <div class="menu-item-footer">
+                        <span class="price">$7.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container">
+            <a href="pages/menu.html" class="view-all-btn">View Our Full Menu</a>
+        </div>
+    </section>
+
+    <section id="specials" class="specials-section">
+        <h2>Today's Specials</h2>
+        <div class="specials-container">
+            <div class="special-item">
+                <div class="special-badge">Limited Time</div>
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Special Dish">
+                    <div class="menu-item-overlay">
+                    </div>
+                </div>
+                <div class="menu-item-content">
+                    <h3>Lobster Thermidor</h3>
+                    <p>Fresh lobster in a rich cream sauce</p>
+                    <div class="menu-item-footer">
+                        <div class="special-price">
+                            <span class="price">$39.99</span>
+                            <span class="old-price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-description">
+                        <h3>Our Story</h3>
+                        <p>Welcome to Resto, where culinary excellence meets elegant ambiance. Founded in 2010, our passionate team of chefs creates unforgettable dining experiences using the finest locally-sourced ingredients.</p>
+                        <p>Our philosophy is simple: exceptional food, impeccable service, and a welcoming atmosphere that makes every guest feel special.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Fine Dining</h4>
+                            <p>Exquisite dishes prepared by our master chefs</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h4>Premium Quality</h4>
+                            <p>Only the finest ingredients are used</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <h4>Award Winning</h4>
+                            <p>Recognized for culinary excellence</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-glass-cheers"></i>
+                            <h4>Perfect Atmosphere</h4>
+                            <p>Elegant setting for memorable occasions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant Interior">
+                    <div class="about-chef">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c" alt="Head Chef">
+                        <div class="chef-info">
+                            <h4>Michael Roberts</h4>
+                            <p>Executive Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section animate-on-scroll">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <button class="testimonial-nav prev-testimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonials-wrapper">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Customer 1">
+                        </div>
+                        <p class="testimonial-text">"The best dining experience I've had in years! The atmosphere is perfect, and the food is absolutely divine."</p>
+                        <h4 class="testimonial-author">Sarah Johnson</h4>
+                        <p class="testimonial-role">Food Critic</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Customer 2">
+                        </div>
+                        <p class="testimonial-text">"Incredible flavors and exceptional service. Every visit feels special and memorable."</p>
+                        <h4 class="testimonial-author">Michael Chen</h4>
+                        <p class="testimonial-role">Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            <button class="testimonial-nav next-testimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="awards" class="awards-section animate-on-scroll">
+        <h2>Our Achievements</h2>
+        <div class="awards-container">
+            <div class="award-item">
+                <i class="fas fa-star"></i>
+                <h3>Michelin Star</h3>
+                <p>2023 Excellence in Culinary Arts</p>
+            </div>
+            <div class="award-item">
+                <i class="fas fa-award"></i>
+                <h3>Best Restaurant</h3>
+                <p>City Food Awards 2023</p>
+            </div>
+            <div class="award-item">
+                <i class="fas fa-trophy"></i>
+                <h3>Chef's Choice</h3>
+                <p>International Cuisine Festival</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section animate-on-scroll">
+        <h2>Make a Reservation</h2>
+        <div class="reservation-container">
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="date" id="date" required>
+                        <label for="date">Date</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" id="time" required>
+                        <label for="time">Time</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select id="guests" required>
+                        <option value="">Select number of guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="special-requests" rows="4"></textarea>
+                    <label for="special-requests">Special Requests</label>
+                </div>
+                <button type="submit" class="submit-btn">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="instagram-feed" class="instagram-section animate-on-scroll">
+        <div class="container">
+            <h2>Follow Us on Instagram</h2>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food 1">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Food 2">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d" alt="Culinary Dish">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="https://instagram.com" target="_blank" class="view-all-btn instagram-btn">
+                    <i class="fab fa-instagram"></i> View More on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" required>
+                    <label class="form-label">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" required>
+                    <label class="form-label">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" required></textarea>
+                    <label class="form-label">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Restaurant Street, City, Country</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@resto.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Resto</h3>
+                <p>Experience the finest culinary delights in an elegant atmosphere.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p><i class="far fa-clock"></i> Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p><i class="far fa-clock"></i> Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Culinary City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@resto.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Resto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="notification"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html> 

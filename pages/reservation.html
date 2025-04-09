@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Resto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Resto</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation-hero">
+        <div class="reservation-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Make a Reservation</h1>
+            <p class="animate__animated animate__fadeInUp">Reserve your table for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <section class="reservation-section full-reservation">
+        <div class="container">
+            <div class="reservation-container animate-on-scroll">
+                <form class="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                            <label for="guests">Number of Guests</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="date" required>
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" id="time" required>
+                            <label for="time">Time</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="special-requests" rows="4"></textarea>
+                        <label for="special-requests">Special Requests</label>
+                    </div>
+                    <div class="reservation-submit">
+                        <button type="submit" class="submit-reservation">Book Table</button>
+                    </div>
+                </form>
+                <div class="reservation-info">
+                    <div class="info-section">
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday - Friday:</span> 11:00 AM - 10:00 PM</li>
+                            <li><span>Saturday - Sunday:</span> 10:00 AM - 11:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="info-section">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                            <li><i class="fas fa-envelope"></i> reservations@resto.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Culinary City</li>
+                        </ul>
+                    </div>
+                    <div class="info-section">
+                        <h3>Reservation Policy</h3>
+                        <p>Please note that a reservation is held for 15 minutes past the scheduled time. For parties of 6 or more, a credit card is required to hold the reservation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Resto</h3>
+                <p>Experience the finest culinary delights in an elegant atmosphere.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 11am - 10pm</p>
+                <p>Saturday - Sunday: 10am - 11pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Culinary City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@resto.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Resto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="notification"></div>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/reservation.js"></script>
+</body>
+</html>
